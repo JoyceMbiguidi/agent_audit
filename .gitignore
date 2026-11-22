@@ -1,1 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environnement
 .env
+.env.*
+!.env.example
+
+# Données sensibles
+data/raw/
+data/processed/
+
+# IDE
+.vscode/
+
+# Logs
+*.log
