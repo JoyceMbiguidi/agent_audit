@@ -43,3 +43,8 @@ Automatiser le profiling, le contrôle qualité et l'analyse métier de fichiers
       - Préicion : le Profiler ne détectera pas encore que l'email est incorrect ou que l'âge est négatif. Il se contente de décrire les données. C'est précisément le rôle que nous donnerons ensuite à l'agent Quality.
       - Créer le point d'entrée en complétant agent_audit/main.py. Notre application est maintenant exécutable.
       - A la racine, dans le cmd exécute : python main.py
+    - Agent IA "quality" : détectera des anomalies. Travaillera avec des règles Python déterministes, sans LLM : c'est important pour garantir la fiabilité des contrôles.
+      - Compléter tools/data_quality.py à la suite de profile_csv
+      - Compléter le noeaud Quality dans agents/quality.py
+      - Mettre à jour le Workflow LangGraph orchestrator/graph.py. Le workflow exécute maintenant deux nœuds successivement
+      - Dans ./main.py, ajouter la brique de traitement "Quality Report" après l'affichage du "Profiling"

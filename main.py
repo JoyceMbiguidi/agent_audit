@@ -25,6 +25,16 @@ def main():
             ensure_ascii=False
         )
     )
+    
+    print("\n=== QUALITY REPORT ===")
+
+    print(
+       json.dumps(
+           result["quality_report"],
+           indent=4,
+           ensure_ascii=False
+       )
+    )
 
 
 if __name__ == "__main__":
