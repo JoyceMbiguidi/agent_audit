@@ -1,1 +1,4 @@
-
+langgraph # Orchestration multi-agents
+langchain-ollama # Connexion au LLM
+pandas # Profiling et contrôle des données
+python-dotenv # Gestion de la configuration
